@@ -145,3 +145,18 @@ footer {
   height: auto;
   width: 100%;
 }
+
+.footer{
+  display: flex;
+}
+footer .contact-us{
+  width: 50%;
+  height: 300px;
+  padding-left: 10px;
+  border-right: 1px solid black;
+}
+
+footer .about-us{
+  padding-left: 10px;
+  width: 50%;
+}
