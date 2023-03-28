@@ -14,7 +14,7 @@ body {
 }
 
 .head a {
-  float: right;
+  float: left;
   display: block;
   color: black;
   text-align: center;
@@ -46,12 +46,76 @@ body {
   border: none;
 }
 .head .search-container button {
-  float: right;
+  float: none;
   padding: 6px 10px;
   margin-top: 8px;
-  margin-right: 16px;
+  margin-right: 8px;
   background: #ddd;
   font-size: 17px;
   border: none;
   cursor: pointer;
+}
+.head .links .login {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 8px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  font-size: medium;
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Set display to inline-block */
+  border-radius: 4px; /* Set border radius */
+  cursor: pointer; /* Set cursor to pointer */
+  transition: background-color 0.3s ease; /* Add transition */
+}
+.head .links .login:hover:not(.clicked) {
+  background-color: #ddd; /* Change background color on hover */
+  animation: pulse 0.5s infinite alternate; /* Add animation */
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1); /* Starting size */
+  }
+  to {
+    transform: scale(1.1); /* Ending size */
+  }
+}
+
+.head .links .login.clicked {
+  animation: none; /* Disable animation when button is clicked */
+}
+.body {
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #b5daff; */
+  height: 100%;
+  width: 100%;
+}
+.body .carousel {
+  padding-top: 5px;
+  background-color: #c5bcbc;
+  height: 300px;
+  border: 1px solid #aaa;
+  width: auto;
+}
+
+.body .hot-deals {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 8px;
+  background-color: aquamarine;
+  height: 200px;
+  width: 100%;
+  flex-direction: row;
+}
+.body .hot-deals div {
+  border-radius: 25px;
+  height: auto;
+  width: 200px;
+  background-color: azure;
+  margin: 10px;
 }
