@@ -1,16 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #edf1f4;
 }
+
 .head {
-  background-color: #cad6e2;
+  align-items: center;
   display: flex;
   justify-content: center;
+  background-color: #cad6e2;
 }
+
 .head .company-logo {
-  width: 25%;
+  width: 33%;
+  padding: 10px;
 }
 .head .links {
-  width: 25%;
+  width: 33%;
 }
 
 .head a {
@@ -56,18 +66,18 @@ body {
   cursor: pointer;
 }
 .head .links .login {
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 8px;
-  background: #ddd;
-  font-size: 17px;
   border: none;
+  margin-top: 8px;
+  font-size: 17px;
+  cursor: pointer; /* Set cursor to pointer */
+  margin-right: 8px;
+  padding: 6px 10px;
   font-size: medium;
+  background: #ddd;
   text-align: center;
+  border-radius: 4px; /* Set border radius */
   text-decoration: none; /* Remove underline */
   display: inline-block; /* Set display to inline-block */
-  border-radius: 4px; /* Set border radius */
-  cursor: pointer; /* Set cursor to pointer */
   transition: background-color 0.3s ease; /* Add transition */
 }
 .head .links .login:hover:not(.clicked) {
@@ -88,62 +98,77 @@ body {
   animation: none; /* Disable animation when button is clicked */
 }
 .body {
-  margin-top: 3px;
+  width: 100%;
+  height: auto;
   display: flex;
+  margin-top: 3px;
   flex-direction: column;
   background-color: #b5daff;
-  height: auto;
-  width: 100%;
 }
 .body .carousel {
-  padding-top: 5px;
-  background-color: #c5bcbc;
-  height: 300px;
-  border: 1px solid #aaa;
   width: auto;
+  height: 300px;
+  padding-top: 5px;
+  border: 1px solid #aaa;
+  background-color: #c5bcbc;
+}
+
+.ht-d{
+  font-size: 25px;
+  padding: 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ft-d{
+  font-size: 25px;
+  padding: 10px 0;
+  font-weight: bold;
+  text-align: center;
 }
 
 .body .hot-deals {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 8px;
-  background-color: aquamarine;
-  height: 200px;
   width: 100%;
+  display: flex;
+  height: 200px;
+  margin-top: 8px;
+  text-align: center;
   flex-direction: row;
+  justify-content: space-evenly;
+  background-color: aquamarine;
 }
 .body .hot-deals div {
-  border-radius: 25px;
   height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 200px;
-  background-color: azure;
   margin: 10px;
+  border-radius: 25px;
+  background-color: azure;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .body .featured-deals {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 8px;
-  background-color: rgb(95, 117, 109);
-  height: 200px;
   width: 100%;
+  display: flex;
+  height: 200px;
+  margin-top: 8px;
   flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(95, 117, 109);
 }
 .body .featured-deals div {
-  border-radius: 10px;
   height: auto;
   width: 200px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: azure;
   margin: 10px;
+  border-radius: 10px;
+  background-color: azure;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 footer {
-  margin-top: 3px;
+  width: 100%;
+  height: auto;
   display: flex;
+  margin-top: 3px;
   flex-direction: column;
   background-color: #b5daff;
-  height: auto;
-  width: 100%;
 }
 
 .footer{
@@ -153,10 +178,10 @@ footer .contact-us{
   width: 50%;
   height: 300px;
   padding-left: 10px;
-  border-right: 1px solid black;
 }
 
 footer .about-us{
-  padding-left: 10px;
   width: 50%;
+  padding-left: 10px;
+  border-right: 1px solid black;
 }
