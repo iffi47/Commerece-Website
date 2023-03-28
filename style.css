@@ -4,7 +4,7 @@ body {
 .head {
   background-color: #cad6e2;
   display: flex;
-  justify-content: ;
+  justify-content: center;
 }
 .head .company-logo {
   width: 25%;
