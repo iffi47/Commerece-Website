@@ -91,8 +91,8 @@ body {
   margin-top: 3px;
   display: flex;
   flex-direction: column;
-  /* background-color: #b5daff; */
-  height: 100%;
+  background-color: #b5daff;
+  height: auto;
   width: 100%;
 }
 .body .carousel {
@@ -115,7 +115,33 @@ body {
 .body .hot-deals div {
   border-radius: 25px;
   height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 200px;
   background-color: azure;
   margin: 10px;
+}
+.body .featured-deals {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 8px;
+  background-color: rgb(95, 117, 109);
+  height: 200px;
+  width: 100%;
+  flex-direction: row;
+}
+.body .featured-deals div {
+  border-radius: 10px;
+  height: auto;
+  width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: azure;
+  margin: 10px;
+}
+footer {
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+  background-color: #b5daff;
+  height: auto;
+  width: 100%;
 }
